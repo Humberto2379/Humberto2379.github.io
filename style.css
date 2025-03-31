@@ -1,0 +1,28 @@
+.Title
+{
+    font-size: xx-large;
+    color:black;
+    font-family: 'Times New Roman';
+    text-align: center;
+}
+.SimpleText
+{
+    font-size: x-large;
+    color:black;
+    font-family: 'Times New Roman';
+    text-align: left;
+}
+
+body
+{
+    background-color: rgb(132, 233, 132);
+    
+}
+
+.ImageContainer
+{
+    width: 200px;
+    height: 250px;
+    background-image: var(--image-url);
+    background-size: cover;
+}

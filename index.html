@@ -1,36 +1,55 @@
 <!DOCTYPE html>
-<head></head>
+<html lang="en"> <!-- This specify, that the language that we are using is english, also make's it more easy to read for screen-readers and other programs-->
+<head>
+    <link rel="stylesheet" href="style.css"> <!--  Importing the style sheet  -->
+    <meta charset="utf-8"> <!-- Added it to avoid, text corruption, emojist and special characters breaks-->
+    <meta name="viewport" content="device-width, initial-scale=1, shrink-to-fit=no"> <!-- The purpose of this line is to make 
+    browsers in phone to render correctly, now it will render with the width of the use phone, with a zoom of 100% (initial-scale) and 
+    will not shrink the content to fit-->
+</head>
+
 <body>
-    <style>
-        .blueTextBox
-        {
-            border: 5px solid blue;
-            width: 500px;
-            height: 50px;
-            margin:20px;
-
-        }
-        .titles
-        {
-            font-size: x-large;
-            color:blueviolet;
-        }
-    </style>
     <div>
-        <h1>Quiero presentarles mi proyecto</h1>
+        <h1 class="Title">UPR HOUSING</h1> <!-- Top Text, Title-->
     </div>
-    <div class="blueTextBox">
-        <h1 class="titles">Hola Profesor</h1>
-    </div>
-    <div><!-- Esto es un comentario en HTML -->
-        <form action="https://hianime.to/" method="get">
-            <input  id="name" placeholder="name" type="text" required>
-            <button type="submit">submit</button>
-        </form>
+    <div style="display:flex; gap: 15px">
+        <!-- Making a wrapper for the pictures, in order to draw them, next to each other  -->
+        <div class="ImageContainer" style="
+    --image-url: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSJfJ2rNxhsz6AoCt_SJuj0SoR3jpMim5k1g&s');
+      "> <!-- Images URL-->
+        </div>
+
+        <div class="ImageContainer" style="
+    --image-url: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSJfJ2rNxhsz6AoCt_SJuj0SoR3jpMim5k1g&s');  
+    "> <!-- Images URL-->
+        </div>
+
+        <div class="ImageContainer" style="
+    --image-url: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSJfJ2rNxhsz6AoCt_SJuj0SoR3jpMim5k1g&s');  
+    "> <!-- Images URL-->
+        </div>
+
     </div>
 
-    
+    </div>
+
+    </div>
+
+    <div>
+        <h1 class="SimpleText">Summary: </h1>
+    </div>
+
+    <div>
+        <button id="ClickMe"> Click Me!</button>
+    </div>
+
+
+
+
+    <script src="script.js"></script> <!-- Importing the script file-->
 </body>
 <script>
 
 </script>
+
+</html>
