@@ -15,7 +15,7 @@
 
 body
 {
-    background-color: rgb(132, 233, 132);
+    background-color: rgb(95, 199, 95);
     
 }
 
@@ -25,4 +25,10 @@ body
     height: 250px;
     background-image: var(--image-url);
     background-size: cover;
+}
+
+.Space
+{
+    display: flex;
+    column-gap:15px;
 }
