@@ -1,16 +1,39 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif; 
+  text-align: center;
+  padding: 10px 16px;
+}
 
 ul {
+  display: flex;
+  justify-content: space-between;
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #4CAF50;
+  background-color: #4CAF50; 
   position: fixed;
   top: 0;
-  width: 100vw;
+  width: 100%;
+}
+
+.nav-right {
+  display: flex;
+  gap: 15px; /* Space between links */
 }
   
 li {
@@ -47,21 +70,26 @@ body {
 .container {
   display: flex;
   justify-content: space-around;
-  align-items: flex-start;
-  gap: 20px;
+  align-items: center;
+  gap: 2%;
   padding: 20px;
   margin-top: 80px;
+  flex-direction: column; /* Default: horizontal layout for larger screens */
+  flex-wrap: wrap;
 }
 
 .block {
   /* border-top: 50px solid #4CAF50; */
   flex: 1;
-  max-width: 400px;
-  height: 500px;
-  /* padding: 20px; */
+  max-width: 1000px;
+  width: 90%;
+  height: auto;
   border-radius: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  background-color: #f8f8f8;
+  /* background-color: #f8f8f8; */
+  background-color: #C8E6C9 ;
+  margin-bottom: 3%;
+  
 }
 
 .block-header {
@@ -76,6 +104,19 @@ body {
   margin-bottom: 10px;
 }
 
+@media only screen and (max-width: 768px) {
+
+  .container {
+    padding: 20px;
+      flex-direction: column; /* Changes to vertical layout */
+      align-items: center; /* Centers blocks in mobile view */
+  }
+
+  .block {
+      width: 90%;/* Makes blocks take most of the screen width */
+      max-width: 400px; /* Prevents excessive width */
+  }
+}
 
 p {
   font-size: 14px;
@@ -83,3 +124,5 @@ p {
   line-height: 1.5;
   text-align: justify;
 }
+
+
