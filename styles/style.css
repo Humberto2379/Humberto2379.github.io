@@ -67,6 +67,25 @@ body {
   
 }
 
+
+/* --------------------------------------------------------- */
+
+.MemberCard
+{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  height: 350px;
+  padding: 10px;
+}
+/* .MemberImage
+{
+  height: 250px;
+  border-radius: 10px;
+} */
+/* --------------------------------------------------------- */
+
+
 .container {
   display: flex;
   justify-content: space-around;
