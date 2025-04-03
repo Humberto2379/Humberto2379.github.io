@@ -113,10 +113,10 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 2%;
+  gap: 5%;
   padding: 20px;
   margin-top: 80px;
-  flex-direction: column; /* Default: horizontal layout for larger screens */
+  flex-direction: row; /* Default: horizontal layout for larger screens */
   flex-wrap: wrap;
 }
 
@@ -124,7 +124,7 @@ body {
   /* border-top: 50px solid #4CAF50; */
   flex: 1;
   max-width: 1000px;
-  width: 90%;
+  /* width: 90%; */
   height: auto;
   border-radius: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
